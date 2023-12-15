@@ -10,7 +10,7 @@ import {
   NavbarMenuToggle,
 } from "@nextui-org/react";
 import Image from "next/image";
-import { IoAdd, IoLogOut, IoLogIn } from "react-icons/io5"; // Import relevant icons
+import { IoLogOut, IoLogIn } from "react-icons/io5"; // Import relevant icons
 
 const menuItems = [
   { name: "Home", link: "/" },
@@ -72,7 +72,7 @@ export default function BarberMenu() {
                 href="/create"
                 className="flex items-center rounded-full border-2 border-solid border-gray-500 px-4 py-2 text-[#fff] text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
               >
-                <IoAdd className="mr-1" /> Create a story
+                 Create a story
               </Link>
             </NavbarItem>
             <NavbarItem>
@@ -115,7 +115,7 @@ export default function BarberMenu() {
             href="/get-started" // Replace with your get started page
             className="flex items-center rounded-full border-2 border-solid border-white px-4 py-2 text-[#fff] text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
           >
-            <IoAdd className="mr-1" /> Get Started
+Get Started
           </Link>
         </NavbarItem>
       </NavbarContent>
