@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 const swaggerUi = require("swagger-ui-express");
 const cookieParser = require("cookie-parser");
 const { swaggerOptions } = require("./utils/constants.js");
+const authRoute = require("./routes/auth.routes");
 const connectDB = require("./database/db");
 
 dotenv.config();
@@ -27,8 +28,9 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 // >> Routes
 const storyRoutes = require("./routes/story.routes.js");
-
 app.use("/api/story", storyRoutes);
+
+app.use("/", authRoute);
 
 app.listen(process.env.PORT, () => {
   console.log(`API-SERVER >> Server running on port ${process.env.PORT}`);

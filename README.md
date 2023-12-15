@@ -1,7 +1,7 @@
 
-# Teller 
+# MindMystery 
 
-Teller (or TellerAI) is an AI tool which provides you a unique, family-friendly, image and text-based story based on your input prompt. It comes along with our AI voice adaptation - just select your actor and enjoy him/her recite your story to you ⭐.
+MindMystery (or MindMysteryAI) is an AI tool which provides you a unique, family-friendly, image and text-based story based on your input prompt. It comes along with our AI voice adaptation - just select your actor and enjoy him/her recite your story to you ⭐.
 
 ---
 
@@ -29,7 +29,7 @@ Teller (or TellerAI) is an AI tool which provides you a unique, family-friendly,
 - Share your favourite stories
 ## Demo video
 
-[![Application Demo Video](https://github.com/kaizerpwn/teller-ai/assets/70588174/549007cd-1dfe-48ab-a264-4af239de09d7)](https://youtu.be/aMFEpCQLuOA)
+[![Application Demo Video](https://github.com/kaizerpwn/MindMystery-ai/assets/70588174/549007cd-1dfe-48ab-a264-4af239de09d7)](https://youtu.be/aMFEpCQLuOA)
 
 
 

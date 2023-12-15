@@ -50,7 +50,7 @@ const Step = ({ progress }: StepProps) => {
             </svg>
           </div>
           <p className="text-gray-600">
-            Teller meticulously examines the provided prompt, unraveling the
+            MindMystery meticulously examines the provided prompt, unraveling the
             fundamental themes, characters, settings, and conflicts embedded
             within.
           </p>
@@ -82,7 +82,7 @@ const Step = ({ progress }: StepProps) => {
             </svg>
           </div>
           <p className="text-gray-600">
-            TellerAI crafts a visual narrative by summoning a repository of
+            MindMysteryAI crafts a visual narrative by summoning a repository of
             diverse images, conjuring up scenes, scenarios, and concepts
             tailored to the context.
           </p>
@@ -114,7 +114,7 @@ const Step = ({ progress }: StepProps) => {
             </svg>
           </div>
           <p className="text-gray-600">
-            TellerAI curates and organizes information from vast knowledge
+            MindMysteryAI curates and organizes information from vast knowledge
             sources, weaving together a coherent narrative aligned with the
             prompt&apos;s requirements.
           </p>

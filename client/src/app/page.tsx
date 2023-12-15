@@ -7,8 +7,8 @@ import Step from "@/components/Step";
 import { Footer } from "@/components/Footer";
 import Popular from "@/components/Popular";
 import useStories from "../hooks/useStory";
-import { useEffect, useMemo, useState } from "react";
 import Spinner from "@/utils/Spinner";
+import { useEffect, useMemo, useState } from "react";
 
 export default function Home() {
   const { stories, storiesLoading } = useStories();
@@ -26,9 +26,6 @@ export default function Home() {
     }, 1000);
   }, []);
 
-  if (loading || storiesLoading) {
-    return <Spinner />;
-  }
 
   return (
     <>

@@ -5,7 +5,7 @@ const swaggerOptions = {
   definition: {
     openapi: "3.1.0",
     info: {
-      title: "Teller API Documentation",
+      title: "MindMystery API Documentation",
       version: "0.1.0",
       description:
         "This is a web application made with Express and documented with Swagger",
@@ -14,9 +14,9 @@ const swaggerOptions = {
         url: "https://spdx.org/licenses/MIT.html",
       },
       contact: {
-        name: "Teller",
-        url: "https://teller.com",
-        email: "info@teller.com",
+        name: "MindMystery",
+        url: "https://MindMystery.com",
+        email: "info@MindMystery.com",
       },
     },
     servers: [

@@ -25,8 +25,8 @@ const Step = () => {
           Steps
         </h1>
         <p className="text-gray-400 max-w-[500px] mb-8 text-[17px] mt-4">
-          Introduction: Crafting a story is a journey in three steps: choose a
-          genre, define the age range, and set a creative prompt.
+          Introduction: Crafting a story for your child is a journey in three steps:  Input Children Details, Generate Story and Illustrations, and save your  Masterpieces.
+          
         </p>
       </div>
       <div>

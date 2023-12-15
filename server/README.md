@@ -1,4 +1,4 @@
-Teller (server-side) is a [Express.js](https://nextjs.org/) project.
+MindMystery (server-side) is a [Express.js](https://nextjs.org/) project.
 
 ## Getting Started
 

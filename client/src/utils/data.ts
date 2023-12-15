@@ -8,10 +8,6 @@ export const genres = [
     genre: "Comedy",
   },
   {
-    id: 3,
-    genre: "For Kids",
-  },
-  {
     id: 4,
     genre: "Adventure",
   },
@@ -49,21 +45,30 @@ export const stepData = [
     id: 1,
     title: "Step 1",
     paragraph:
-      "Explore genres to set the tone. From mystery to fantasy, your choice molds the narrative canvas. Select and envision.",
+      "Share your children's names and special notes to weave a narrative that resonates with their hearts.",
       duration: "2000"
+
+
   },
   {
     id: 2,
     title: "Step 2",
     paragraph:
-      "Consider your audience. Tailor the story for young minds or mature readers. Age range shapes the language, themes, and complexity.",
+      "Experience the magic of AI as it transforms your input into captivating stories accompanied by enchanting illustrations.",
       duration: "2500"
   },
   {
     id: 3,
     title: "Step 3",
     paragraph:
-      "Craft a prompt to ignite imagination. What's the story about? Even just a single sentence sparks the narrative, guiding your creative journey.",
+      "Preserve these precious tales in your account, creating a library of memories to revisit and cherish.",
+      duration: "3000"
+  },
+  {
+    id: 4,
+    title: "Step 4",
+    paragraph:
+      "Take a trip down memory lane by exploring and reliving the stories you've created for your little ones.",
       duration: "3000"
   },
 ];

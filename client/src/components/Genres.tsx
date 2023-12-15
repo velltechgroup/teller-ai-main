@@ -34,10 +34,9 @@ const Genres = ({
     <section className="container mx-auto my-16 px-8 lg:px-8 relative pb-12">
       <div>
         <div className="flex flex-col" data-aos="fade-up">
-          <h1 className="text-5xl text-primaryColor font-bold">Genres</h1>
+          <h1 className="text-5xl text-primaryColor font-bold">Welcome to  Mind Mysteries</h1>
           <p className="text-gray-400 max-w-[500px] mb-8 text-[17px] mt-4">
-            Explore Teller&apos;s genre options: select one, weave a tale. Genre
-            choices shape stories & create worlds.
+          At MindMysteries, we believe in the power of imagination and the joy of storytelling. Our platform allows you to create enchanting, personalized stories for your children, making every moment a magical adventure.
           </p>
         </div>
       </div>

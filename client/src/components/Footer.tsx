@@ -14,13 +14,13 @@ export const Footer = () => {
           </a>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-white">
-              Bring your imagination to life with Teller. Discover boundless
+              Bring your imagination to life with MindMystery. Discover boundless
               creativity in our imaginative haven.
             </p>
             <p className="mt-4 text-sm text-white">
               Become a part of our vibrant community, and explore endless
               possibilities of storytelling. Thank you for contributing to the
-              magic of Teller!
+              magic of MindMystery!
             </p>
           </div>
         </div>
@@ -81,7 +81,7 @@ export const Footer = () => {
             </a>
           </div>
           <p className="mt-4 text-sm text-white">
-            Unleash your creativity with Teller and turn your ideas into
+            Unleash your creativity with MindMystery and turn your ideas into
             reality. Explore a world of limitless imagination within our
             creative sanctuary.
           </p>
@@ -90,7 +90,7 @@ export const Footer = () => {
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm text-white">
           © Copyright 2023{" "}
-          <span className="text-primaryColor">Salt Valley.</span> All rights
+          <span className="text-primaryColor">Mind Mysteries</span> All rights
           reserved.
         </p>
       </div>
