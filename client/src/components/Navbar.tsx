@@ -13,7 +13,7 @@ import Image from "next/image";
 import { IoAdd, IoLogOut, IoLogIn } from "react-icons/io5"; // Import relevant icons
 
 const menuItems = [
-  // { name: "Home", link: "/" },
+  { name: "Home", link: "/" },
   // { name: "Stories", link: "/stories" },
   // { name: "Categories", link: "/categories" },
   // { name: "About Us", link: "#steps" },
