@@ -14,8 +14,8 @@ import { IoAdd, IoLogOut, IoLogIn } from "react-icons/io5"; // Import relevant i
 
 const menuItems = [
   { name: "Home", link: "/" },
-  // { name: "Stories", link: "/stories" },
-  // { name: "Categories", link: "/categories" },
+  { name: "Stories", link: "/stories" },
+  { name: "Categories", link: "/categories" },
   // { name: "About Us", link: "#steps" },
 ];
 
