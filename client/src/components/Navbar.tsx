@@ -29,7 +29,7 @@ export default function BarberMenu() {
         <Link
           color="foreground"
           href={item.link}
-          className="text-white hover:border-solid hover:border-b hover:border-primaryColor transition-all duration-300 font-dmsans"
+          className="text-black hover:border-solid hover:border-b hover:border-primaryColor transition-all duration-300 font-dmsans"
         >
           {item.name}
         </Link>
@@ -41,7 +41,7 @@ export default function BarberMenu() {
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
       id="nav-menu"
-      className="text-white bg-transparent"
+      className="text-black bg-transparent"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -51,11 +51,11 @@ export default function BarberMenu() {
         <NavbarBrand>
           <Link href="/" className="hover:bg-none hover:opacity-1">
             <Image
-              src="/images/logo.png"
+              src="/"
               alt="logo"
               width={100}
               height={100}
-            />
+                          />
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -70,7 +70,7 @@ export default function BarberMenu() {
             <NavbarItem>
               <Link
                 href="/create"
-                className="flex items-center rounded-full border-2 border-solid border-gray-500 px-4 py-2 text-[#fff] text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
+                className="flex items-center rounded-full border-2 border-solid border-gray-500 px-4 py-2 text-black text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
               >
                  Create a story
               </Link>
@@ -78,7 +78,7 @@ export default function BarberMenu() {
             <NavbarItem>
               <Link
                 href="/logout" // Replace with your logout logic
-                className="flex items-center rounded-full border-2 border-solid border-white px-4 py-2 text-[#fff] text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
+                className="flex items-center rounded-full border-2 border-solid border-white px-4 py-2 text-black text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
               >
                 <IoLogOut className="mr-1" /> Logout
               </Link>
@@ -104,7 +104,7 @@ export default function BarberMenu() {
         {!isLoggedIn && (
           <NavbarItem>
             <Link              href="/login" // Replace with your login page
-              className="flex items-center rounded-full border-2 border-solid border-gray-500 px-4 py-2 text-[#fff] text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
+              className="flex items-center rounded-full border-2 border-solid border-gray-500 px-4 py-2 text-black text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
             >
               <IoLogIn className="mr-1" /> Login
             </Link>
@@ -113,7 +113,7 @@ export default function BarberMenu() {
         <NavbarItem>
           <Link
             href="/get-started" // Replace with your get started page
-            className="flex items-center rounded-full border-2 border-solid border-white px-4 py-2 text-[#fff] text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
+            className="flex items-center rounded-full border-2 border-solid border-black px-4 py-2 text-black text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
           >
 Get Started
           </Link>

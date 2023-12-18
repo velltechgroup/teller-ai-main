@@ -37,7 +37,7 @@ const config: Config = {
         typing: "typing 1s steps(30) infinite alternate, blink .7s infinite"
       },
       colors: {
-        "primaryColor" :"#57b688"
+        "primaryColor" :"#15D5CC"
       }
     },
   },

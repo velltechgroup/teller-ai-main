@@ -35,18 +35,18 @@ const Genres = ({
       <div>
         <div className="flex flex-col" data-aos="fade-up">
           <h1 className="text-5xl text-primaryColor font-bold">Welcome to  Mind Mysteries</h1>
-          <p className="text-gray-400 max-w-[500px] mb-8 text-[17px] mt-4">
+          <p className="text-gray-700 max-w-[500px] mb-8 text-[17px] mt-4">
           At MindMysteries, we believe in the power of imagination and the joy of storytelling. Our platform allows you to create enchanting, personalized stories for your children, making every moment a magical adventure.
           </p>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col gap-4 mt-6">
-          <div className="flex flex-wrap gap-4 text-white">
+          <div className="flex flex-wrap gap-4 text-black">
             {genres.slice(0, 4).map((data, i) => (
               <div
                 key={i}
-                className={`border rounded border-solid border-gray-400 px-3 py-2 hover:bg-primaryColor duration-300 text-white cursor-pointer ${
+                className={`border rounded border-solid border-gray-400 px-3 py-2 hover:bg-primaryColor duration-300 text-black cursor-pointer ${
                   selectedGenre === data.genre ? "bg-primaryColor" : ""
                 }`}
                 onClick={handleGenreClick.bind(null, data.genre)}
@@ -55,11 +55,11 @@ const Genres = ({
               </div>
             ))}
           </div>
-          <div className="flex flex-wrap gap-4 text-white">
+          <div className="flex flex-wrap gap-4 text-black">
             {genres.slice(4, 7).map((data, i) => (
               <div
                 key={i}
-                className={`border rounded border-solid border-gray-400 px-3 py-2 hover:bg-primaryColor duration-300 text-white cursor-pointer ${
+                className={`border rounded border-solid border-gray-400 px-3 py-2 hover:bg-primaryColor duration-300 text-black cursor-pointer ${
                   selectedGenre === data.genre ? "bg-primaryColor" : ""
                 }`}
                 onClick={handleGenreClick.bind(null, data.genre)}
@@ -68,11 +68,11 @@ const Genres = ({
               </div>
             ))}
           </div>
-          <div className="flex flex-wrap gap-4 text-white">
+          <div className="flex flex-wrap gap-4 text-black">
             {genres.slice(7).map((data, i) => (
               <div
                 key={i}
-                className={`border rounded border-solid border-gray-400 px-3 py-2 hover:bg-primaryColor duration-300 text-white cursor-pointer ${
+                className={`border rounded border-solid border-gray-400 px-3 py-2 hover:bg-primaryColor duration-300 text-black cursor-pointer ${
                   selectedGenre === data.genre ? "bg-primaryColor" : ""
                 }`}
                 onClick={handleGenreClick.bind(null, data.genre)}
@@ -94,10 +94,10 @@ const Genres = ({
                     height={1000}
                     width={1000}
                   />
-                  <h5 className="mb-2 text-xl text-white font-bold leading-none sm:text-2xl">
+                  <h5 className="mb-2 text-xl text-black font-bold leading-none sm:text-2xl">
                     {data.name}
                   </h5>
-                  <p className="text-white">
+                  <p className="text-black">
                     {data.summary.length > maxLength
                       ? `${data.summary.substring(0, maxLength)}...`
                       : data.summary}

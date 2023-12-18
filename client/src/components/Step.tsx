@@ -43,7 +43,7 @@ const Step = () => {
                   <div>
                     <div className="flex items-center justify-center w-10 h-10 border rounded-full">
                       <svg
-                        className="w-4 text-white"
+                        className="w-4 text-black"
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -68,10 +68,10 @@ const Step = () => {
                   <div className="w-px h-full bg-gray-300" />
                 </div>
                 <div className="pt-1 pb-8">
-                  <p className="mb-2 text-lg font-bold text-white">
+                  <p className="mb-2 text-lg font-bold text-black">
                     {step.title}
                   </p>
-                  <p className="text-white">{step.paragraph}</p>
+                  <p className="text-gray-500">{step.paragraph}</p>
                 </div>
               </div>
             ))}
@@ -85,7 +85,7 @@ const Step = () => {
                 <div>
                   <div className="flex items-center justify-center w-10 h-10 border rounded-full">
                     <svg
-                      className="w-6 text-white"
+                      className="w-6 text-black"
                       stroke="currentColor"
                       viewBox="0 0 24 24">
                       <polyline
@@ -105,8 +105,8 @@ const Step = () => {
                 data-aos="fade-up"
                 data-aos-duration="5000"
                 data-aos-easing="linear">
-                <p className="mb-2 text-lg font-bold text-white">Success</p>
-                <p className="text-white" />
+                <p className="mb-2 text-lg font-bold text-black">Success</p>
+                <p className="text-black" />
               </div>
             </div>
           </div>

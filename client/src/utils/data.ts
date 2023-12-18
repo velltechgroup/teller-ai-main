@@ -1,31 +1,49 @@
 export const genres = [
   {
     id: 1,
-    genre: "Horror",
+    genre: "Action and Adventure",
+    description: "Thrilling and suspenseful escapades"
   },
   {
     id: 2,
     genre: "Comedy",
+    description: "Laughter and amusement"
+
   },
   {
     id: 4,
-    genre: "Adventure",
+    genre: "Mystery",
+    description: "Investigations, puzzles and secrets"
   },
   {
     id: 5,
-    genre: "History",
+    genre: "Drama",
+    description: "Conflicts, relationships and struggles"
   },
   {
     id: 6,
-    genre: "Sci-Fi",
+    genre: "Fantasy",
+    description: "Magic, mythical creatures and fantasies"
   },
   {
     id: 7,
-    genre: "Fairytales",
+    genre: "Historical Fiction",
+    description: "Stories that blend history and real people"
   },
   {
     id: 8,
-    genre: "Psychological",
+    genre: "Science Fiction",
+    description: "Futuristic or imagined worlds"
+  },
+  {
+    id: 9,
+    genre: "Biography",
+    description: "Stories of real people and achievements"
+  },
+  {
+    id: 10,
+    genre: "Creative NonFiction",
+    description: "Blend of Fiction and non Fiction"
   }
 ];
 
@@ -38,7 +56,7 @@ export const narratorData = [
   { name: "Samantha", model: "shimmer" },
 ]; 
 
-export const ageRange = ["1-10","10-15", "15-20","20+"]
+export const ageRange = ["0-2","2-4", "4-6","6-8", "8-10","10-12","12-14", "14-16"]
 
 export const stepData = [
   {

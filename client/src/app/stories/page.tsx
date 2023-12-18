@@ -36,7 +36,7 @@ const StoriesPage = () => {
               <Link
                 key={storie._id}
                 href={`/story/${storie._id}`}
-                className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-white dark:hover:bg-gray-700">
                 <div className="w-full h-64 md:w-full overflow-hidden rounded-t-lg">
                   <Image
                     src={storie.scenarios[0].image}

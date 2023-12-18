@@ -6,11 +6,13 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #001e2b !important;
+  background-color: #ffffff !important;
+  font-color: 000000;
 }
 body {
-  background-color: #001e2b !important;
+  background-color: #ffffff !important;
   font-family: "DM Sans", sans-serif !important;
+  font-color: 000000;
 }
 .play-btn {
   box-shadow: 3px 3px 10px #b5b5b5;
