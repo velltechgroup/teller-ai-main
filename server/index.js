@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 
 app.use(cookieParser());
-app.use(cors({ origin: "https://www.mindmysteries.co.uk/", credentials: true }));
+app.use(cors({ origin: "https://www.mindmysteries.co.uk/", methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', credentials: true }));
 app.use(express.json());
 app.use(
   session({
