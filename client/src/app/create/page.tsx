@@ -104,13 +104,13 @@ const CreateStoryPage = () => {
               />
 
               {step === 1 && <GenreFilter genre={genre} setGenre={setGenre} />}
-              {step === 3 && (
+              {step === 2 && (
                 <AgeRangeFilter age={ageRange} setAgeRange={setAgeRange} />
               )}
-              {step === 4 && (
+              {step === 3 && (
                 <NarratorFilter narrator={narrator} setNarrator={setNarrator} />
               )}
-              {step === 5 && (
+              {step === 4 && (
                 <UserPrompt
                   userPrompt={userPrompt}
                   setUserPrompt={setUserPrompt}
