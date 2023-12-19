@@ -10,7 +10,7 @@ export const Footer = () => {
             aria-label="Go home"
             title="Company"
             className="inline-flex items-center">
-            <Image src="/" alt="logo" width={100} height={100} />
+            <Image src="/images/logo.png" alt="logo" width={200} height={200 } />
           </a>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-black">

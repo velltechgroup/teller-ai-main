@@ -58,6 +58,97 @@ export const narratorData = [
 
 export const ageRange = ["0-2","2-4", "4-6","6-8", "8-10","10-12","12-14", "14-16"]
 
+export const character = ["Protagonist - Main character", "Antagonist - Opposes the main character",
+"Sidekick - Supports the main character","Love Interest - Is attracted to the main character", "Deuteragonist - Main character’s best friend"]
+
+export const jsonPlot = {
+  character: [
+    "Protagonist - Main character",
+    "Antagonist - Opposes the main character",
+    "Sidekick - Supports the main character",
+    "Love Interest - Is attracted to the main character",
+    "Deuteragonist - Main character’s best friend",
+    "Overcoming - Main character overcomes an adversary",
+    "Rags to riches - Main character rises from humble beginnings",
+    "Quest - Main character goes on a journey",
+    "Voyage and return - Main character travels far and returns",
+    "Rebirth - Main character undergoes a transformation",
+    "Tragedy - Main character suffers a misfortune",
+    "N/A"
+  ],
+  setting: {
+    "Mysterious forest": [],
+    School: [],
+    Playground: [],
+    "An enchanted forest": [],
+    "An underwater kingdom": [],
+    "A deserted city": [],
+    "A castle": [],
+    "A dungeon": [],
+    "The mountains": [],
+    "A tunnel system": [],
+    "An underground city": [],
+    "A different planet": [],
+    "A meteoroid": [],
+    "A space station": [],
+    "A rocket ship": [],
+    "The Arctic": [],
+    "Inside a dream": [],
+    "A coffee shop or café": [],
+    "A high school or college campus": [],
+    "A military base": [],
+    "A summer camp": [],
+    "A farm": [],
+    "A haunted house": [],
+    "A police station": [],
+    "A courtroom": [],
+    "A mansion": [],
+    "An abandoned building": [],
+    "N/A": []
+  },
+    tone: [
+    "Objective tone - Neutral and unbiased",
+    "Subjective tone - Personal and opinionated",
+    "Reflective tone - Thoughtful and introspective",
+    "Humorous tone - Lighthearted and witty",
+    "Melodramatic tone - Exaggerated and emotional",
+  ],
+  themes: [
+    "Good vs Evil - Struggle between good and evil, and choices made",
+    "Love and Loss - Power of love to bring people together",
+    "Individuality vs Society - Conflict between personal desires and society’s expectations",
+    "Justice and Injustice - Struggle for fairness and equality",
+    "Fate vs Free Will - Challenges of making choices and the consequences",
+    "Nature vs Technology - Conflict between humans and the natural world",
+    "Dreams and Reality - Difference between what we wish for and what is possible",
+  ],
+  literaryDevices: [
+    "Imagery - create mental pictures using similes and metaphors",
+    "Symbolism - Use objects to represent other things",
+    "Repetition - Repeating words, phrases and images many times",
+    "Allusion - References to history, culture and literature",
+    "Onomatopoeia - Words that represent sounds e.g. ‘boom’, ‘crash’",
+    "Hyperbole - References to exaggeration",
+    "N/A"
+  ],
+  lengthOfStory: [
+    "5-minute story - Up to 750 words",
+    "10-minute story - Between 750 - 1500 words",
+    "15-minute story - Between 1500 - 2500 words",
+    "20-minute story - Between 2000 - 3000 words",
+    "25-minute story - Between 2500 - 3500 words",
+    "30-minute story - Between 3500 - 4500 words"
+  ],
+  illustrations: [
+    "1 illustration per page",
+    "2 illustrations per page",
+    "3 illustrations per page",
+    "4 illustrations per page",
+    "5 illustrations per page",
+    "N/A"
+  ]
+};
+
 export const stepData = [
   {
     id: 1,

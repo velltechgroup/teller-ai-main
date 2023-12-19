@@ -51,10 +51,10 @@ export default function BarberMenu() {
         <NavbarBrand>
           <Link href="/" className="hover:bg-none hover:opacity-1">
             <Image
-              src="/"
+              src="/images/logo.png"
               alt="logo"
-              width={100}
-              height={100}
+              width={150}
+              height={150}
                           />
           </Link>
         </NavbarBrand>
@@ -65,6 +65,14 @@ export default function BarberMenu() {
       </NavbarContent>
 
       <NavbarContent justify="end">
+      <NavbarItem>
+              <Link
+                href="/create"
+                className="flex items-center rounded-full border-2 border-solid border-gray-500 px-4 py-2 text-black text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
+              >
+                 Create a story
+              </Link>
+            </NavbarItem>
         {isLoggedIn && (
           <>
             <NavbarItem>
@@ -91,33 +99,15 @@ export default function BarberMenu() {
                 Stories
               </Link>
             </NavbarItem>
-            <NavbarItem>
-              <Link
-                href="/categories" // Link to the Categories page
-                className="text-white hover:border-solid hover:border-b hover:border-primaryColor transition-all duration-300 font-dmsans"
-              >
-                Categories
-              </Link>
-            </NavbarItem>
+            
           </>
         )}
         {!isLoggedIn && (
           <NavbarItem>
-            <Link              href="/login" // Replace with your login page
-              className="flex items-center rounded-full border-2 border-solid border-gray-500 px-4 py-2 text-black text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
-            >
-              <IoLogIn className="mr-1" /> Login
-            </Link>
+           
           </NavbarItem>
         )}
-        <NavbarItem>
-          <Link
-            href="/get-started" // Replace with your get started page
-            className="flex items-center rounded-full border-2 border-solid border-black px-4 py-2 text-black text-sm hover:bg-white hover:text-black cursor-pointer transition duration-500"
-          >
-Get Started
-          </Link>
-        </NavbarItem>
+       
       </NavbarContent>
 
       <NavbarMenu>

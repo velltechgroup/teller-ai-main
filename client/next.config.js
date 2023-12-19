@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   devIndicators: {
-    port: 4000,
+    port: 5000,
   },
   images: {
     remotePatterns: [

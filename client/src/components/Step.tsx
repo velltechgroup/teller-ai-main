@@ -113,7 +113,7 @@ const Step = () => {
           <div className="relative">
             <Image
               className="inset-0 object-cover object-bottom w-full rounded-lg shadow-lg shadow-gray-700 h-96 lg:absolute lg:h-full border-2 border-gray-800"
-              src="/images/app.png"
+              src="/images/app.jpg"
               alt=""
               height={1000}
               width={1000}

@@ -2,6 +2,7 @@
 import BackButton from "@/components/BackButton";
 import AgeRangeFilter from "@/components/Filters/AgeRange";
 import GenreFilter from "@/components/Filters/Genre";
+import CharacterFilter from "@/components/Filters/Character"; 
 import Header from "@/components/Filters/Header";
 import NarratorFilter from "@/components/Filters/Narrator";
 import UserPrompt from "@/components/Filters/UserPrompt";
@@ -15,6 +16,7 @@ import Spinner from "@/utils/Spinner";
 const CreateStoryPage = () => {
   const [step, setStep] = useState<number>(1);
   const [genre, setGenre] = useState<string>("");
+  const [character, setCharacter] = useState<string>("");
   const [ageRange, setAgeRange] = useState<string>("");
   const [narrator, setNarrator] = useState<string>("");
   const [userPrompt, setUserPrompt] = useState<string>("");
@@ -38,6 +40,11 @@ const CreateStoryPage = () => {
           ageRange,
           narrator,
           prompt: userPrompt,
+          character:"",
+          plot: "",
+          setting: "",
+          tone: "",
+          themes: ""
         };
         const response = await StoryAPI.createStory(storyParams);
         console.log(response);
@@ -97,13 +104,13 @@ const CreateStoryPage = () => {
               />
 
               {step === 1 && <GenreFilter genre={genre} setGenre={setGenre} />}
-              {step === 2 && (
+              {step === 3 && (
                 <AgeRangeFilter age={ageRange} setAgeRange={setAgeRange} />
               )}
-              {step === 3 && (
+              {step === 4 && (
                 <NarratorFilter narrator={narrator} setNarrator={setNarrator} />
               )}
-              {step === 4 && (
+              {step === 5 && (
                 <UserPrompt
                   userPrompt={userPrompt}
                   setUserPrompt={setUserPrompt}
