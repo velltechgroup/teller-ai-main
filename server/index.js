@@ -17,7 +17,7 @@ app.use(cors({ origin: "https://www.mindmysteries.co.uk/", credentials: true }))
 app.use(express.json());
 app.use(
   session({
-    secret: process.env.EXPRESS_SESSION,
+    secret: "qwsdfghjuiko9i8u7y6etwrqesadfgthy",
     resave: true,
     saveUninitialized: true,
   })
@@ -33,6 +33,6 @@ app.use("/api/story", storyRoutes);
 // app.use("/", authRoute);
 
 app.listen(process.env.PORT, () => {
-  console.log(`API-SERVER >> Server running on port ${process.env.PORT}`);
+  // console.log(`API-SERVER >> Server running on port ${process.env.PORT}`);
   connectDB();
 });
