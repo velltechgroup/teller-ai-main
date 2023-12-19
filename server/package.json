@@ -13,7 +13,7 @@
     "nodejs",
     "expressjs"
   ],
-  "author": "Salt Valley",
+  "author": "Mind Mysteries",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.2",
