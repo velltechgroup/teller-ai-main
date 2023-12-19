@@ -6,14 +6,22 @@ const dotenv = require("dotenv");
 const swaggerUi = require("swagger-ui-express");
 const cookieParser = require("cookie-parser");
 const { swaggerOptions } = require("./utils/constants.js");
-// const authRoute = require("./routes/auth.routes");
 const connectDB = require("./database/db");
 
 dotenv.config();
 const app = express();
 
 app.use(cookieParser());
-app.use(cors({ origin: "https://www.mindmysteries.co.uk/", methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', credentials: true }));
+
+// CORS middleware configuration
+app.use(
+  cors({
+    origin: "https://www.mindmysteries.co.uk",
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true
+  })
+);
+
 app.use(express.json());
 app.use(
   session({
@@ -26,13 +34,17 @@ app.use(
 const specs = swaggerJsdoc(swaggerOptions);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
-// >> Routes
+// Routes
 const storyRoutes = require("./routes/story.routes.js");
-app.use("/api/story", storyRoutes);
 
-// app.use("/", authRoute);
+// Set CORS headers for the story routes
+app.use("/api/story", (req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://www.mindmysteries.co.uk');
+  res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
+  res.header('Access-Control-Allow-Credentials', true);
+  next();
+}, storyRoutes);
 
 app.listen(process.env.PORT, () => {
-  // console.log(`API-SERVER >> Server running on port ${process.env.PORT}`);
   connectDB();
 });
