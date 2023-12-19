@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: 'https://mystery-api-f87n.onrender.com/api/',
     withCredentials: true
 });
 
