@@ -5,6 +5,8 @@ import { Providers } from "@/utils/Provider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Toaster } from "react-hot-toast";
+import { ClerkProvider } from '@clerk/nextjs'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className={`${inter.className}`}>
         <Toaster position="top-right" />
@@ -26,5 +29,6 @@ export default function RootLayout({
         <Providers>{children}</Providers>
       </body>
     </html>
+    </ClerkProvider>
   );
 }

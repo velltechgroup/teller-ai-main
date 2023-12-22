@@ -11,7 +11,9 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import { IoLogOut, IoLogIn } from "react-icons/io5"; // Import relevant icons
-
+import { UserButton } from "@clerk/nextjs";
+ 
+ 
 const menuItems = [
   { name: "Home", link: "/" },
   { name: "Stories", link: "/stories" },
@@ -101,6 +103,7 @@ export default function BarberMenu() {
             </NavbarItem>
             
           </>
+          
         )}
         {!isLoggedIn && (
           <NavbarItem>
@@ -129,6 +132,11 @@ export default function BarberMenu() {
             </Link>
           </NavbarMenuItem>
         ))}
+
+        
+    <div className="h-screen">
+      <UserButton afterSignOutUrl="/"/>
+    </div>
       </NavbarMenu>
     </Navbar>
   );
