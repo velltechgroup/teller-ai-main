@@ -16,7 +16,7 @@ app.use(cookieParser());
 // CORS middleware configuration
 app.use(
   cors({
-    origin: "https://www.mindmysteries.co.uk",
+    origin: "https://mindmysteries.vercel.app/",
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true
   })
