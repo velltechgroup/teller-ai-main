@@ -16,7 +16,7 @@ app.use(cookieParser());
 // CORS middleware configuration
 app.use(
   cors({
-    origin: *,
+    origin: "*",
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true
   })
