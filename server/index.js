@@ -16,7 +16,7 @@ app.use(cookieParser());
 // CORS middleware configuration
 app.use(
   cors({
-    origin: "https://mindmysteries.vercel.app/",
+    origin: *,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true
   })
@@ -39,7 +39,7 @@ const storyRoutes = require("./routes/story.routes.js");
 
 // Set CORS headers for the story routes
 app.use("/api/story", (req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://mindmysteries.vercel.app/');
+  res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
   res.header('Access-Control-Allow-Credentials', true);
   next();
